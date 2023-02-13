@@ -1,0 +1,20 @@
+magic
+tech sky130A
+timestamp 1676314862
+<< poly >>
+rect 0 -15 15 30
+<< xpolycontact >>
+rect 100 150 500 250
+rect 100 -450 500 -350
+<< xpolyres >>
+rect 100 250 500 400
+rect 100 -350 500 150
+rect 100 -600 500 -450
+<< locali >>
+rect 100 100 500 150
+<< labels >>
+rlabel poly 5 -10 10 -5 1 up
+rlabel poly 5 20 10 25 1 down
+rlabel xpolycontact 130 -410 150 -390 1 TWO
+rlabel xpolycontact 120 190 140 210 1 ONE
+<< end >>

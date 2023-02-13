@@ -1,0 +1,9 @@
+Inverter Simulation
+* this file edited to remove everything not in tt lib
+.lib "/home/kuba/.volare/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+* instantiate the inverter
+X1R ONE TWO VGND X1
+
+.subckt X1 one two VSUBS
+

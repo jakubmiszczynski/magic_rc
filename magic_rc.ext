@@ -1,0 +1,23 @@
+timestamp 1676314862
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__res_xhigh_po l=l w=w
+parameters sky130_fd_pr__res_xhigh_po_5p73 l=l
+parameters sky130_fd_pr__res_xhigh_po_2p85 l=l
+parameters sky130_fd_pr__res_xhigh_po_1p41 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p69 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p35 l=l
+node "a_200_n1200#" 5333 0 200 -1200 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240000 2200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "TWO" 133 587.787 200 -900 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 320000 4000 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_200_n700#" 2500 0 200 -700 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 3600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "down" 145 73.4878 0 -30 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2700 240 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "ONE" 114 626.411 200 300 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 400000 4200 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_200_500#" 5333 0 200 500 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 240000 2200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "ONE" "TWO" 54.262
+device rsubckt sky130_fd_pr__res_xhigh_po 200 -1200 201 -1199 l=700 w=400 "VSUBS" "a_200_n1200#" 0 0 "TWO" 0 0 "TWO" 800 0
+device rsubckt sky130_fd_pr__res_xhigh_po 200 -700 201 -699 l=1000 w=800 "VSUBS" "a_200_n700#" 0 0 "TWO" 800 0 "ONE" 800 0
+device rsubckt sky130_fd_pr__res_xhigh_po 200 500 201 501 l=700 w=400 "VSUBS" "a_200_500#" 0 0 "ONE" 800 0 "ONE" 0 0
