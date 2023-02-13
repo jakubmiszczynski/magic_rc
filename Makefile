@@ -12,6 +12,9 @@ magic:
 	# ext2spice
 
 simulation.spice: pre.spice $(NAME).spice post.spice
+	# magic puts subckt and end around extract, so remove it
+	sed -i -e 's/.ends//' $(NAME).spice
+	sed -i -e 's/.subckt magic_rc//' $(NAME).spice
 	# build a simulation with pre and post.spice
 	cat $^ > $@
 

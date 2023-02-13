@@ -1,6 +1,6 @@
 * NGSPICE file created from magic_rc.ext - technology: sky130A
 
-.subckt magic_rc
+
 X0 TWO TWO VSUBS sky130_fd_pr__res_xhigh_po w=2e+06u l=3.5e+06u
 X1 TWO ONE VSUBS sky130_fd_pr__res_xhigh_po w=4e+06u l=5e+06u
 X2 ONE ONE VSUBS sky130_fd_pr__res_xhigh_po w=2e+06u l=3.5e+06u
@@ -8,5 +8,5 @@ C0 ONE TWO 0.05fF
 C1 TWO VSUBS 0.59fF
 C2 down VSUBS 0.07fF $ **FLOATING
 C3 ONE VSUBS 0.63fF
-.ends
+
 
